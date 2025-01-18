@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saparya's Memory Book</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="logo">
-            <h1><span class="highlight">Saparya Jagannath</span></h1>
+            <h1><span class="highlight">Saparya Jagannath</span>
+                <button class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </h1>            
         </div>
+        
         <nav class="navbar">
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
@@ -19,32 +28,80 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="cta-buttons">
-            <button class="btn" onclick="window.location.href='#contact'">Get in Touch</button>
-        </div>
+        
     </header>
-
-    <!-- Main content -->
-    <div id="home">
-        <!-- Your homepage content here -->
-    </div>
-    <div id="about">
-        <!-- Your about section -->
-    </div>
-    <div id="projects">
-        <!-- Projects section -->
-    </div>
-    <div id="contact">
-        <!-- Contact section -->
-    </div>
-    
-
     <div id="particles-js"></div>
-<!-- 
-    <footer>
-        <p>&copy; 2025 Your Name</p>
-    </footer> -->
+    <!-- Main content -->
+    <section id="home" class="hero-section">
+        <!-- <div id="particles-js"></div> -->
+        <div class="hero-content">
+            <h1>Welcome to My Universe</h1>
+            <p>
+                Hi, I'm <span class="highlight">[Your Name]</span>, a passionate <strong>Web Developer</strong>,
+                <strong>Game Designer</strong>, and <strong>Innovator</strong>.
+            </p>
+            <p>
+                I craft immersive web experiences and engaging games, blending creativity with technology.
+            </p>
+            <div class="cta-buttons">
+                <button class="btn" onclick="window.location.href='#projects'">View My Work</button>
+                <button class="btn outline" onclick="window.location.href='#contact'">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>
+            I'm a second-year B.Tech student specializing in <strong>Web Development</strong>,
+            <strong>Game Design</strong>, and <strong>Machine Learning</strong>.
+            With a strong foundation in coding and a knack for creativity, I bring ideas to life through innovative
+            projects.
+        </p>
+        <p>
+            My expertise includes programming in Python, C++, and JavaScript, alongside using frameworks
+            like Django, React.js, and Unity.
+        </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <h3>Project Name</h3>
+                <p>Brief description of the project and its highlights.</p>
+                <button class="btn small" onclick="window.location.href='project-link.html'">View Project</button>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <h3>Project Name</h3>
+                <p>Brief description of the project and its highlights.</p>
+                <button class="btn small" onclick="window.location.href='project-link.html'">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to discuss projects, collaborations, or just to say hi!</p>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

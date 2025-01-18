@@ -63,3 +63,13 @@ particlesJS("particles-js", {
     },
     retina_detect: true
 });
+
+
+// toggle the visibility of the navbar when the hamburger menu is clicked.
+
+const hamburger = document.getElementById('hamburger-menu');
+    const navbar = document.querySelector('.navbar');
+
+    hamburger.addEventListener('click', () => {
+        navbar.classList.toggle('show'); // Toggles the visibility
+    });
