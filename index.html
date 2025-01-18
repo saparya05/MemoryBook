@@ -17,9 +17,9 @@
                     <span></span>
                     <span></span>
                 </button>
-            </h1>            
+            </h1>
         </div>
-        
+
         <nav class="navbar">
             <ul class="nav-list">
                 <li><a href="#home">Home</a></li>
@@ -28,20 +28,18 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
+
     </header>
     <div id="particles-js"></div>
-    <!-- Main content -->
+
     <section id="home" class="hero-section">
-        <!-- <div id="particles-js"></div> -->
-        <div class="hero-content">
+        <div class="hero-content" id="intro-paragraph">
             <h1>Welcome to My Universe</h1>
             <p>
-                Hi, I'm <span class="highlight">[Your Name]</span>, a passionate <strong>Web Developer</strong>,
-                <strong>Game Designer</strong>, and <strong>Innovator</strong>.
-            </p>
-            <p>
-                I craft immersive web experiences and engaging games, blending creativity with technology.
+                Hi, I'm <span class="highlight2"><strong>Saparya Jagannath</strong></span>, a 2nd-year B.Tech student
+                passionate about <strong>technology</strong>, <strong>Artificial Intelligence</strong> and
+                <strong>software development</strong>. I enjoy solving complex problems and building innovative
+                projects. <strong>Welcome to my portfolio!</strong>.
             </p>
             <div class="cta-buttons">
                 <button class="btn" onclick="window.location.href='#projects'">View My Work</button>
@@ -51,38 +49,89 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2>About Me</h2>
-        <p>
-            I'm a second-year B.Tech student specializing in <strong>Web Development</strong>,
-            <strong>Game Design</strong>, and <strong>Machine Learning</strong>.
-            With a strong foundation in coding and a knack for creativity, I bring ideas to life through innovative
-            projects.
-        </p>
-        <p>
-            My expertise includes programming in Python, C++, and JavaScript, alongside using frameworks
-            like Django, React.js, and Unity.
-        </p>
-    </section>
+    <section class="about-section" id="about">
+        <div class="about-content">
+          <div class="image-container">
+            <img src="Images/WhatsApp Image .jpg" alt="Your Photo" class="about-photo">
+          </div>
+          <h2>About Me</h2>
+          <p>
+            Hi, I'm <span class="highlight">Saparya Jagannath</span>, a passionate tech enthusiast exploring the vast universe of technology, AI, and game development. Just like space, my skills are limitless!
+          </p>
+          <button class="btn" onclick="showMore()">View More</button>
+        </div>
+      </section>
+      
+      <div id="about-modal" class="about-modal hidden">
+        <div class="modal-content">
+          <button class="close-btn" onclick="hideMore()">X</button>
+          <h2>About Me</h2>
+          <p>Explore my journey in technology and space-inspired creativity...</p>
+          <!-- Add more detailed content here -->
+        </div>
+      </div>
+      
+      
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Brief description of the project and its highlights.</p>
-                <button class="btn small" onclick="window.location.href='project-link.html'">View Project</button>
+    <section class="projects-section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="project1.jpg" alt="Project 1" class="project-image">
+                <div class="project-info">
+                  <h3>Project 1</h3>
+                  <p>Technologies: HTML, CSS, JavaScript</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <p>This is a description of Project 1. It demonstrates how to use the latest web technologies to create a responsive and interactive webpage.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">View on GitHub</a>
+              </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <h3>Project Name</h3>
-                <p>Brief description of the project and its highlights.</p>
-                <button class="btn small" onclick="window.location.href='project-link.html'">View Project</button>
+          </div>
+      
+          <!-- Project Card 2 -->
+          <div class="project-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="project2.jpg" alt="Project 2" class="project-image">
+                <div class="project-info">
+                  <h3>Project 2</h3>
+                  <p>Technologies: Python, Django</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <p>This project is a web application built using Python and Django, showcasing a real-time chat application.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a>
+              </div>
             </div>
+          </div>
+      
+          <!-- Project Card 3 -->
+          <div class="project-card">
+            <div class="card-inner">
+              <div class="card-front">
+                <img src="project3.jpg" alt="Project 3" class="project-image">
+                <div class="project-info">
+                  <h3>Project 3</h3>
+                  <p>Technologies: Unity, C#</p>
+                </div>
+              </div>
+              <div class="card-back">
+                <p>Project 3 is an interactive 3D game created using Unity and C#, showcasing my skills in game development.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank" class="github-link">View on GitHub</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        
+        <button class="btn view-more">View More</button>
+      </section>
+      
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
