@@ -1,10 +1,10 @@
 particlesJS("particles-js", {
     particles: {
         number: {
-            value: 1800, // A larger number of stars for a denser effect
+            value: 1700, // A larger number of stars for a denser effect
             density: {
                 enable: true,
-                value_area: 1800 // Spread stars across a broader area
+                value_area: 1900 // Spread stars across a broader area
             }
         },
         color: {
@@ -18,12 +18,12 @@ particlesJS("particles-js", {
             random: true, // Randomize star brightness
             anim: {
                 enable: true,
-                speed: 0.1, // Subtle twinkling animation
+                speed: 0.3, // Subtle twinkling animation
                 opacity_min: 0.2
             }
         },
         size: {
-            value: 1.4, // Smaller stars for subtlety
+            value: 1.2, // Smaller stars for subtlety
             random: true,
             anim: {
                 enable: false // No size animation to maintain balance
@@ -33,12 +33,12 @@ particlesJS("particles-js", {
             enable: true, // Enable constellations
             distance: 90, // Shorter connection range for minimal lines
             color: "#ffffff", // Line color
-            opacity: 0.06, // Even fainter lines
-            width: 0.4 // Thinner lines
+            opacity: 0.05, // Even fainter lines
+            width: 0.3 // Thinner lines
         },
         move: {
             enable: true,
-            speed: 1.5, // Smooth and slow movement
+            speed: 1, // Smooth and slow movement
             direction: "none",
             random: true,
             out_mode: "out" // Stars reappear when out of bounds
