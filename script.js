@@ -131,8 +131,6 @@ function isInViewport(element) {
 
 
 
-
-// Cosmic particles or background animation can be added here, like floating stars or effects on scroll.
 function showMore() {
     document.getElementById('about-modal').classList.remove('hidden');
   }

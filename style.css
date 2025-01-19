@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 8px 40px;
     position: sticky;
     top: 0;
     background-color: #00000081;
@@ -196,6 +196,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 15px;
 }
 
 .hero-content {
@@ -211,6 +212,7 @@ body {
     font-size: 1.2rem;
     margin: 10px 0;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .hero-content .cta-buttons {
@@ -231,7 +233,7 @@ body {
 
 #intro-paragraph {
     opacity: 1;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.8s ease-out;
 }
 
 .hidden {
@@ -381,7 +383,7 @@ body {
 .about-intro {
     font-size: 1.2rem;
     margin: 20px 0;
-    color: #fff;
+    color: #bdbdbd;
     text-align: justify;
 }
 
@@ -424,7 +426,7 @@ body {
     padding: 10px 15px;
     background-color: rgba(103, 71, 221, 0.1);
     border-radius: 8px;
-    color: #fff;
+    color: #bdbdbd;
 }
 
 .timeline-content h4 {
@@ -444,7 +446,7 @@ body {
     text-align: left;
     font-size: 0.9rem;
     font-weight: bold;
-    color: #aaa;
+    color: #bdbdbd;
 }
 
 .timeline-content .highlight {
@@ -480,87 +482,83 @@ body {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     .about-photo {
-        width: 120px;
-        height: 120px;
-    }
-
-    .about-content2 {
-        flex-direction: column;
-        gap: 20px;
+        width: 130px;
+        height: 130px;
     }
 
     .about-myself, .about-skills {
-        flex: 100%;
+        flex: 100%; /* Stacking the sections on medium screens */
+    }
+
+    .about-content2 h2 {
+        font-size: 2rem;
+    }
+
+    .about-content2 p {
+        font-size: 1rem;
     }
 }
 
-/* Responsive Design */
 @media only screen and (max-width: 768px) {
+    .about-section {
+        padding: 30px;
+        height: 200vh;
+    }
+
     .about-photo {
         width: 120px;
         height: 120px;
     }
 
-    .about-content2 {
-        flex-direction: column;
-        gap: 20px;
+    .about-myself, .about-skills {
+        flex: 100%; /* Stacking the sections on smaller screens */
     }
 
-    .about-myself, .about-skills {
-        flex: 100%;
+    .about-content2 h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content2 p {
+        font-size: 1rem;
+    }
+
+    .about-intro {
+        font-size: 0.8rem;
+    }
+    .highlight2{
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-photo {
+        width: 100px;
+        height: 100px;
     }
 
     .about-myself h2, .about-skills h2 {
         font-size: 2rem;
     }
 
-    .about-myself p, .education p {
-        font-size: 1.1rem;
-    }
-
-    .timeline-content h4 {
-        font-size: 1.1rem;
-    }
-
-    .skill-bar {
-        height: 6px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .about-section {
-        padding: 30px;
-        height: 100vh;
-    }
-
-    .about-photo {
-        width: 100px;
-        height: 100px;
-    }
-
-    .about-intro {
-        font-size: 1rem;
-    }
-
-    .about-content2 {
-        gap: 10px;
-    }
-
-    .about-myself, .about-skills {
-        flex: 100%;
-    }
-
     .about-myself p {
         font-size: 1rem;
     }
 
-    .timeline-content p {
+    .about-content2 {
+        flex-direction: column; /* Stack content on extra small screens */
+        gap: 20px;
+    }
+
+    .about-content2 h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-content2 p {
         font-size: 0.9rem;
     }
 }
-
   
 
 /* Projects Section */
@@ -697,7 +695,7 @@ form button {
 }
 section {
     opacity: 0;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.8s ease-out;
     height: 100vh;
 }
 
@@ -758,7 +756,7 @@ section.visible {
     padding: 20px;
     text-align: center;
     font-size: 16px;
-    color: white;
+    color: #bdbdbd;
     transition:color 0.5s ease;
 }
 
