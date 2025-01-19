@@ -148,4 +148,8 @@ function showMore() {
     // Logic to show more projects or navigate to a detailed project page
     window.location.href = '#'; // Replace with the link to the detailed project page
   });
+
+  
+
+
   

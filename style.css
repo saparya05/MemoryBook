@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -19,8 +19,9 @@ body {
     padding: 10px 40px;
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.507);
+    background-color: #00000081;
     z-index: 100;
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Logo Styling */
@@ -135,7 +136,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: radial-gradient(circle at center, #250f74, #0e004b, #000000);
+    background: radial-gradient(circle at center, #1c095f, #0a0133, #000000);
 }
 
 .highlight {
@@ -238,6 +239,25 @@ body {
     pointer-events: none;
 }
 
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 0;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 2rem 0;
+    transition: 0.3s ease-in-out;
+}.social-icons a:hover{
+    color: var(--text-color);
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
 
 /* About Section */
 .about-section, .projects-section, .contact-section {
@@ -258,9 +278,10 @@ body {
     color: #bdbdbd;
     position: relative;
     overflow: hidden;
-  }
-  
-  .about-section::before {
+    height: 150vh;
+}
+
+.about-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -268,44 +289,278 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
-  }
-  
-  .about-content {
+}
+
+.about-content {
     position: relative;
     z-index: 2;
-  }
-  
-  .about-photo {
+}
+
+.about-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(225, 198, 255, 0.7);
     animation: floating 5s ease-in-out infinite;
-  }
-  
-  @keyframes floating {
+}
+
+@keyframes floating {
     0% { transform: translateY(0); }
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
-  }
-  
-  .about-content h2 {
+}
+
+.about-content2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.about-myself, .about-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content at the top */
+}
+
+.about-myself {
+    flex: 70%;
+}
+
+.about-skills {
+    flex: 30%;
+    text-align: left;
+}
+
+.about-content2 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-  }
-  
-  .about-content p {
+}
+
+.about-content2 p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-  }
-  
-  @media only screen and (max-width: 768px) {
+    text-align: justify;
+}
+
+.about-myself h2, .about-skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #6747dd;
+}
+
+.about-myself p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #6747dd;
+    object-fit: cover;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #fff;
+    text-align: justify;
+}
+
+.education h2,
+.about-skills h2 {
+    margin-bottom: 20px;
+    color: #6747dd;
+    display: flex;
+    align-items: center; /* Align the heading vertically */
+    justify-content: flex-start; /* Align to the left */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    border-left: 2px solid #6747dd;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 14px;
+    height: 14px;
+    background-color: #6747dd;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: rgba(103, 71, 221, 0.1);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.timeline-content h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #6747dd;
+    text-align: left;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.timeline-content .year {
+    text-align: left;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #aaa;
+}
+
+.timeline-content .highlight {
+    color: #d4a5ff;
+    font-weight: bold;
+}
+
+.about-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-skills li {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 1.1rem;
+    color: #b9b7c0;
+}
+
+.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #7a5ce4;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
     .about-photo {
-      width: 120px;
-      height: 120px;
+        width: 120px;
+        height: 120px;
     }
-  }
-  
+
+    .about-content2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-myself, .about-skills {
+        flex: 100%;
+    }
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .about-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-content2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-myself, .about-skills {
+        flex: 100%;
+    }
+
+    .about-myself h2, .about-skills h2 {
+        font-size: 2rem;
+    }
+
+    .about-myself p, .education p {
+        font-size: 1.1rem;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .skill-bar {
+        height: 6px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .about-section {
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .about-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-content2 {
+        gap: 10px;
+    }
+
+    .about-myself, .about-skills {
+        flex: 100%;
+    }
+
+    .about-myself p {
+        font-size: 1rem;
+    }
+
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+}
+
   
 
 /* Projects Section */
@@ -434,9 +689,9 @@ form button {
 
 /* Footer */
 .footer {
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
-    background: #0a0a0a;
+    background: #0a0a0a7a;
     color: #bdbdbd;
     font-size: 0.9rem;
 }
@@ -453,6 +708,60 @@ section.visible {
 .hero-section {
     opacity: 1; /* Hero section is always visible */
 }
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: #0a0133;
+    transition: color 0.5s ease;
+}
+.footer .social a{
+    font-size: 25px;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.footer .social a:hover{
+    transform: scale(1.2) translateY(-10px);
+    background-color: var(--main-color);
+    color: #000;
+    box-shadow: 0 0 25px var(--main-color);
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: #6c4dda;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+}
+.footer ul li a:hover{
+    border-bottom: 2px solid var(--main-color);
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    transition:color 0.5s ease;
+}
+
 @media only screen and (max-width: 768px) {
     .header {
         flex-direction: column;

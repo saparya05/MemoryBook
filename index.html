@@ -2,155 +2,238 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saparya's Memory Book</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saparya's Memory Book</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <h1><span class="highlight">Saparya Jagannath</span>
-                <button class="hamburger" id="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </h1>
-        </div>
+  <header class="header">
+    <div class="logo">
+      <h1><span class="highlight">Saparya Jagannath</span>
+        <button class="hamburger" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </h1>
+    </div>
 
-        <nav class="navbar">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-    </header>
-    <div id="particles-js"></div>
+  </header>
+  <div id="particles-js"></div>
 
-    <section id="home" class="hero-section">
-        <div class="hero-content" id="intro-paragraph">
-            <h1>Welcome to My Universe</h1>
-            <p>
-                Hi, I'm <span class="highlight2"><strong>Saparya Jagannath</strong></span>, a 2nd-year B.Tech student
-                passionate about <strong>technology</strong>, <strong>Artificial Intelligence</strong> and
-                <strong>software development</strong>. I enjoy solving complex problems and building innovative
-                projects. <strong>Welcome to my portfolio!</strong>.
-            </p>
-            <div class="cta-buttons">
-                <button class="btn" onclick="window.location.href='#projects'">View My Work</button>
-                <button class="btn outline" onclick="window.location.href='#contact'">Contact Me</button>
+  <section id="home" class="hero-section">
+    <div class="hero-content" id="intro-paragraph">
+      <h1>Welcome to My Universe</h1>
+      <p>
+        Hi, I'm <span class="highlight2"><strong>Saparya Jagannath</strong></span>, a 2nd-year B.Tech student
+        passionate about <strong>technology</strong>, <strong>Artificial Intelligence</strong> and
+        <strong>software development</strong>. I enjoy solving complex problems and building innovative
+        projects. <strong>Welcome to my portfolio!</strong>.
+      </p>
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/saparya-jagannath-b34368305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+            class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/saparya05"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="cta-buttons">
+        <a class="btn"
+          href="https://drive.google.com/file/d/1Qg6C41CAXYepn5Ax7Q4DSIVshpNL6y3y/view?usp=sharing">Resume</a>
+        <button class="btn outline" onclick="window.location.href='#contact'">Contact Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-content">
+      <!-- Centered Image -->
+      <div class="image-container">
+        <img src="Images/WhatsApp Image .jpg" alt="Your Photo" class="about-photo">
+      </div>
+  
+      <!-- Centered About Me Section -->
+      <h2>About Me</h2>
+      <p class="about-intro">
+        Hi, I’m <span class="highlight">Saparya Jagannath</span>, a passionate B.Tech student and aspiring tech innovator. 
+        My journey revolves around exploring the endless possibilities of technology, with a special focus on fields like 
+        artificial intelligence, space science, and game development. I thrive on solving complex problems, creating immersive 
+        user experiences, and bringing creative ideas to life. Beyond coding, I find inspiration in the mysteries of the universe, 
+        fueling my desire to blend technology with the wonders of space exploration.
+      </p>
+  
+      <!-- Split Screen: Education & Skills -->
+      <div class="about-content2">
+        <div class="about-myself" style="flex: 70%">
+          <!-- Education Section -->
+          <div class="education">
+            <h2>Education</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Bachelor of Technology in Computer Science and Engineering</h4>
+                  <p>Bharati Vidyapeeth’s College of Engineering, New Delhi</p>
+                  <span class="year">2024 - 2027</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Diploma in Computer Science and Engineering</h4>
+                  <p>Guru Tegh Bahadur Polytechnic Institute, New Delhi</p>
+                  <span class="year">2021 - 2024</span>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-content">
+                  <h4>Secondary Education (CBSE)</h4>
+                  <p>Sahoday Sr. Sec. School, New Delhi</p>
+                  <span class="year">2009 - 2021</span>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="about-content">
-          <div class="image-container">
-            <img src="Images/WhatsApp Image .jpg" alt="Your Photo" class="about-photo">
           </div>
-          <h2>About Me</h2>
-          <p>
-            Hi, I'm <span class="highlight">Saparya Jagannath</span>, a passionate tech enthusiast exploring the vast universe of technology, AI, and game development. Just like space, my skills are limitless!
-          </p>
-          <button class="btn" onclick="showMore()">View More</button>
         </div>
-      </section>
-      
-      <div id="about-modal" class="about-modal hidden">
-        <div class="modal-content">
-          <button class="close-btn" onclick="hideMore()">X</button>
-          <h2>About Me</h2>
-          <p>Explore my journey in technology and space-inspired creativity...</p>
-          <!-- Add more detailed content here -->
+  
+        <div class="about-skills" style="flex: 30%">
+          <h2>My Skills</h2>
+          <ul>
+            <li><span class="skill-name">Python</span>
+              <div class="skill-bar">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">C++ | DSA</span>
+              <div class="skill-bar">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">Web Development</span>
+              <div class="skill-bar">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
+            </li>
+            <li><span class="skill-name">Machine Learning</span>
+              <div class="skill-bar">
+                <div class="progress" style="width: 20%;"></div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      
-      
+  
+      <!-- Resume Button -->
+      <button class="btn">Resume</button>
+    </div>
+  </section>
+  
 
-    <!-- Projects Section -->
-    <section class="projects-section" id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-          <!-- Project Card 1 -->
-          <div class="project-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="project1.jpg" alt="Project 1" class="project-image">
-                <div class="project-info">
-                  <h3>Project 1</h3>
-                  <p>Technologies: HTML, CSS, JavaScript</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <p>This is a description of Project 1. It demonstrates how to use the latest web technologies to create a responsive and interactive webpage.</p>
-                <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">View on GitHub</a>
-              </div>
+
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- Project Card 1 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project1.jpg" alt="Project 1" class="project-image">
+            <div class="project-info">
+              <h3>Project 1</h3>
+              <p>Technologies: HTML, CSS, JavaScript</p>
             </div>
           </div>
-      
-          <!-- Project Card 2 -->
-          <div class="project-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="project2.jpg" alt="Project 2" class="project-image">
-                <div class="project-info">
-                  <h3>Project 2</h3>
-                  <p>Technologies: Python, Django</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <p>This project is a web application built using Python and Django, showcasing a real-time chat application.</p>
-                <a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Project Card 3 -->
-          <div class="project-card">
-            <div class="card-inner">
-              <div class="card-front">
-                <img src="project3.jpg" alt="Project 3" class="project-image">
-                <div class="project-info">
-                  <h3>Project 3</h3>
-                  <p>Technologies: Unity, C#</p>
-                </div>
-              </div>
-              <div class="card-back">
-                <p>Project 3 is an interactive 3D game created using Unity and C#, showcasing my skills in game development.</p>
-                <a href="https://github.com/yourusername/project3" target="_blank" class="github-link">View on GitHub</a>
-              </div>
-            </div>
+          <div class="card-back">
+            <p>This is a description of Project 1. It demonstrates how to use the latest web technologies to create a
+              responsive and interactive webpage.</p>
+            <a href="https://github.com/yourusername/project1" target="_blank" class="github-link">View on GitHub</a>
           </div>
         </div>
-        
-        <button class="btn view-more">View More</button>
-      </section>
-      
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to discuss projects, collaborations, or just to say hi!</p>
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button class="btn" type="submit">Send Message</button>
-        </form>
-    </section>
+      <!-- Project Card 2 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project2.jpg" alt="Project 2" class="project-image">
+            <div class="project-info">
+              <h3>Project 2</h3>
+              <p>Technologies: Python, Django</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <p>This project is a web application built using Python and Django, showcasing a real-time chat application.
+            </p>
+            <a href="https://github.com/yourusername/project2" target="_blank" class="github-link">View on GitHub</a>
+          </div>
+        </div>
+      </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="script.js"></script>
+      <!-- Project Card 3 -->
+      <div class="project-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="project3.jpg" alt="Project 3" class="project-image">
+            <div class="project-info">
+              <h3>Project 3</h3>
+              <p>Technologies: Unity, C#</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <p>Project 3 is an interactive 3D game created using Unity and C#, showcasing my skills in game development.
+            </p>
+            <a href="https://github.com/yourusername/project3" target="_blank" class="github-link">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn view-more">View More</button>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to discuss projects, collaborations, or just to say hi!</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a
+        href="https://www.linkedin.com/in/saparya-jagannath-b34368305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+          class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/saparya05"><i class='bx bxl-github'></i></a>
+    </div>
+    <ul class="list">
+      <li><a href="#contact">FAQ</a></li>
+      <li><a href="#home">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="copyright">&copy; 2025 Saparya Jagannath | All Rights Reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
