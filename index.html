@@ -60,21 +60,25 @@
   <section class="about-section" id="about">
     <div class="about-content">
       <!-- Centered Image -->
-      
-  
+
+
       <!-- Centered About Me Section -->
       <h2>About Me</h2>
       <div class="image-container">
         <img src="Images/WhatsApp Image .jpg" alt="Your Photo" class="about-photo">
       </div>
       <p class="about-intro">
-        Hi, I’m <span class="highlight">Saparya Jagannath</span>, a passionate B.Tech student and aspiring tech innovator. 
-        My journey revolves around exploring the endless possibilities of technology, with a special focus on fields like 
-        artificial intelligence, space science, and game development. I thrive on solving complex problems, creating immersive 
-        user experiences, and bringing creative ideas to life. Beyond coding, I find inspiration in the mysteries of the universe, 
+        Hi, I’m <span class="highlight">Saparya Jagannath</span>, a passionate B.Tech student and aspiring tech
+        innovator.
+        My journey revolves around exploring the endless possibilities of technology, with a special focus on fields
+        like
+        artificial intelligence, space science, and game development. I thrive on solving complex problems, creating
+        immersive
+        user experiences, and bringing creative ideas to life. Beyond coding, I find inspiration in the mysteries of the
+        universe,
         fueling my desire to blend technology with the wonders of space exploration.
       </p>
-  
+
       <!-- Split Screen: Education & Skills -->
       <div class="about-content2">
         <div class="about-myself" style="flex: 70%">
@@ -106,7 +110,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="about-skills" style="flex: 30%">
           <h2>My Skills</h2>
           <ul>
@@ -133,12 +137,12 @@
           </ul>
         </div>
       </div>
-  
+
       <!-- Resume Button -->
       <button class="btn">Resume</button>
     </div>
   </section>
-  
+
 
 
 
@@ -209,11 +213,26 @@
   <section id="contact" class="contact-section">
     <h2>Contact Me</h2>
     <p>Feel free to reach out to discuss projects, collaborations, or just to say hi!</p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea>
-      <button class="btn" type="submit">Send Message</button>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="a1722369-2edc-486e-bc7c-f49c5c729d15">
+      <div class="bgrp">
+        <div class="grp">
+          <div class="input-group">
+            <div class="input-box">
+              <input type="text" name="name" placeholder="Full Name">
+              <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+              <input type="number" name="phone" placeholder="Phone Number">
+              <input type="text" name="Subject" placeholder="Subject">
+            </div>
+          </div>
+          <div class="input-group-2">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+          </div>
+        </div>
+        <button type="submit" value="Send Message" class="btn">Send Message</button>
+      </div>
     </form>
   </section>
 
