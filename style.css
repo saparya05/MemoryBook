@@ -613,7 +613,9 @@ body {
     object-fit: cover;
     border-radius: 10px;
   }
-  
+  .project-info .p3{
+    font-size: 19px;
+  }
   .project-info {
     padding: 10px 0;
   }
@@ -637,6 +639,7 @@ body {
   
   .card-back p {
     font-size: 1rem;
+    text-align: justify;
   }
   
   .github-link {
