@@ -704,6 +704,7 @@ body {
 
 .contact-section form .bgrp .btn{
     margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 12%;
 }
 
@@ -903,7 +904,6 @@ section.visible {
     
     .contact-section form .bgrp .btn{
         margin-top: 2rem;
-        margin-bottom: 2rem;
         width: 25%;
     }
     
