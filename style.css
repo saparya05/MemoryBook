@@ -573,6 +573,7 @@ body {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
   
   .project-card {
@@ -667,7 +668,8 @@ body {
   .view-more:hover {
     background-color: #9b4d96;
   }
-  
+
+
 
 /* Contact Form */
 .bgrp{
@@ -803,7 +805,6 @@ section.visible {
     .projects-section {
         height: 200vh;
       }
-
     .project-card {
         text-align: center;
     }
@@ -845,6 +846,11 @@ section.visible {
     .about-text {
         text-align: center;
     }
+    .contact-section{
+        margin-top: 20rem;
+        margin-bottom: 10rem;
+    }
+    
 }
 
 @media (max-width: 768px) {
@@ -940,11 +946,20 @@ section.visible {
         padding: 0.8rem; 
     }
     
-    .projects-section {
-        height: 200vh;
+    .projects-section{
+        height: 170vh;
       }
+    .about-section{
+        height: 150vh;
+      }
+    .about-content2 {
+        gap: 80px;
+    }
+
       .contact-section{
-        height: 110vh;
+        height: 90vh;
+        margin-bottom:0;
+        margin-top:0;
       }
       .contact-section form .bgrp .btn{
         margin-top: 0%;
