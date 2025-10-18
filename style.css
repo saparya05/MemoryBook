@@ -847,10 +847,11 @@ section.visible {
         text-align: center;
     }
     .contact-section{
+        height: 115vh;
         margin-top: 20rem;
         margin-bottom: 10rem;
     }
-    
+
 }
 
 @media (max-width: 768px) {
@@ -947,17 +948,17 @@ section.visible {
     }
     
     .projects-section{
-        height: 170vh;
+        height: 210vh;
       }
     .about-section{
-        height: 150vh;
+        height: 190vh;
       }
     .about-content2 {
         gap: 80px;
     }
 
       .contact-section{
-        height: 90vh;
+        height: 115vh;
         margin-bottom:0;
         margin-top:0;
       }
